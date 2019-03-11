@@ -1,0 +1,3 @@
+action "one" {
+  uses = "./"
+}
