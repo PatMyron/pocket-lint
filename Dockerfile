@@ -1,6 +1,6 @@
 FROM python:3
 
-LABEL "com.github.actions.name"="pocket-lint"
+LABEL "com.github.actions.name"="pocket lint"
 LABEL "com.github.actions.description"="Automated Codebase Improvement"
 LABEL "com.github.actions.icon"="git-pull-request"
 LABEL "com.github.actions.color"="white"
