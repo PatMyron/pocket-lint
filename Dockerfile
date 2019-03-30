@@ -6,4 +6,5 @@ LABEL "com.github.actions.icon"="git-pull-request"
 LABEL "com.github.actions.color"="white"
 LABEL "maintainer"="Pat Myron <pmyron@nd.edu>"
 
-ENTRYPOINT echo hello
+RUN pip install flake8
+CMD ["flake8", "."]
