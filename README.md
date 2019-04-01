@@ -11,5 +11,6 @@ workflow "Pocket Lint" {
 
 action "pocket-lint" {
   uses = "PatMyron/pocket-lint@master"
+  secrets = ["GITHUB_TOKEN"] # optional for added functionality
 }
 ```

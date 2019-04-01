@@ -5,4 +5,5 @@ workflow "workflow" {
 
 action "one" {
   uses = "./"
+  secrets = ["GITHUB_TOKEN"] # optional
 }
