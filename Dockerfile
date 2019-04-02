@@ -7,7 +7,23 @@ LABEL "com.github.actions.color"="white"
 LABEL "maintainer"="Pat Myron <pmyron@nd.edu>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    checkstyle \
+    cppcheck \
+    ffmpeg \
+    findbugs \
+    foodcritic \
+    golint \
+    hlint \
+    imagemagick \
+    jsonlint \
+    linklint \
+    lua-check \
+    puppet-lint \
+    pylint \
+    python3-proselint \
     shellcheck \
+    uncrustify \
+    yamllint \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 RUN pip install \
