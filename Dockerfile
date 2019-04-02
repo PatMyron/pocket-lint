@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y \
 RUN pip install \
     flake8
 SHELL ["/bin/bash", "-c"]
-CMD flake8; shopt -s nullglob dotglob; shellcheck **.{sh,bash,ksh,bashrc,bash_profile,bash_login,bash_logout}
+CMD flake8; shopt -s globstar nullglob dotglob; shellcheck **/*.{sh,bash,ksh,bashrc,bash_profile,bash_login,bash_logout}
