@@ -7,11 +7,10 @@ LABEL "com.github.actions.color"="white"
 LABEL "maintainer"="Pat Myron <pmyron@nd.edu>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    hadolint \
     shellcheck \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 RUN pip install \
     flake8
 SHELL ["/bin/bash", "-c"]
-CMD flake8; shopt -s globstar nullglob dotglob; shellcheck **/*.{sh,bash,ksh,bashrc,bash_profile,bash_login,bash_logout}; hadolint **/*Dockerfile
+CMD flake8; shopt -s globstar nullglob dotglob; shellcheck **/*.{sh,bash,ksh,bashrc,bash_profile,bash_login,bash_logout}
